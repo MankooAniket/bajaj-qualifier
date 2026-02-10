@@ -18,7 +18,7 @@ async function queryAI(question) {
     }
 
     try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${config.GEMINI_API_KEY}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${config.GEMINI_API_KEY}`;
 
         const response = await axios.post(url, {
             contents: [{
